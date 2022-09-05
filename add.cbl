@@ -1,0 +1,14 @@
+       IDENTIFICATION DIVISION. 
+       PROGRAM-ID. addcbl.
+      *
+       DATA DIVISION. 
+       WORKING-STORAGE SECTION. 
+       01 WS-NUM1    PIC 9(05) VALUE 150.
+       01 WS-NUM2    PIC 9(05) VALUE 350.
+       01 WS-RESULT  PIC 9(05).
+      *
+       PROCEDURE DIVISION.
+       000-MAIN-PROCESS.
+           ADD WS-NUM1, WS-NUM2 TO WS-RESULT.
+           DISPLAY WS-NUM1 ' + ' WS-NUM2 ' = ' WS-RESULT.
+           STOP RUN.
