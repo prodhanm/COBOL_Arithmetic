@@ -5,7 +5,7 @@
        WORKING-STORAGE SECTION. 
        01 WS-NUM1   PIC 9(05).
        01 WS-NUM2   PIC 9(05).
-       01 WS-RESULT PIC 9(07).
+       01 WS-RESULT PIC 9(07)v9(2).
       *
        PROCEDURE DIVISION.
        000-MAIN-PROCESS.
