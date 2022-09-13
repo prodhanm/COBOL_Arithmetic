@@ -31,7 +31,10 @@
            END-IF.
       *
        200-CALC-NUM.
-           COMPUTE WS-RESULT = WS-NUM1 / WS-NUM2.
+           COMPUTE WS-RESULT = WS-NUM1 / WS-NUM2
+              ON SIZE ERROR DISPLAY "ZERO DIVISION ERROR!"
+              MOVE " ERROR!" TO WS-RESULT
+           END-COMPUTE.
       *
        300-DISPLAY-NUM.
            DISPLAY WS-NUM1 ' / ' WS-NUM2 ' = ' WS-RESULT.
